@@ -1,0 +1,105 @@
+/* Reset and Background */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(120deg, #156dfab0, #cdedfc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card Container */
+  .card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.336);
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Title and Paragraph */
+  .card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #002fc9, #7cc3ec, #2529fc);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background-position 0.5s ease;
+  }
+  
+  .card .enter-dob {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    background: linear-gradient(90deg, #00c9a7, #6a11cb, #2575fc);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background-position 0.5s ease;
+  }
+  .card h2:hover, .card .enter-dob:hover {
+    background-position: 100% 0;
+  }
+
+  /* Input and Button */
+  input[type="date"] {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    outline: none;
+    background: #bbd6fa;
+    color: #242424;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #0011ffd2;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(30deg, #0011ffd2, #58b4ffbb);
+  }
+  
+  /* Result Section */
+  #result {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  #result p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #000d47;
+  }
+  #result .highlight {
+    background: linear-gradient(90deg, #0050c9, hsl(209, 100%, 56%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
